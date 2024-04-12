@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Blossoms & Co.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const contactLink = document.getElementById("contactLink");
+      const contactInfo = document.getElementById("contactInfo");
+
+      contactLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        contactInfo.classList.toggle("show");
+      });
+    });
+  </script>
+  <style>
+    .contact-info {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="roses.html">Roses</a></li>
+        <li><a href="tulips.html">Tulips</a></li>
+        <li><a href="sunflowers.html">Sunflowers</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a id="contactLink" href="#">Contact</a></li> <!-- Updated Contact Link -->
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <div id="contactInfo" class="contact-info">
+        <p><strong>Website:</strong> <a href="https://www.blossomsco.com">www.blossomsco.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@blossomsco.com">info@blossomsco.com</a></p>
+        <p><strong>Location:</strong> 123 Flower St, City, Country</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>PO Box:</strong> PO Box 789, City, Country</p>
+      </div>
+      
+      <h3>Send Us a Message</h3>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Blossoms & Co. | 123 Flower St, City, Country | Email: info@blossomsco.com</p>
+  </footer>
+</body>
+</html>

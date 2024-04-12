@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossoms & Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const contactLink = document.getElementById("contactLink");
+            const contactInfo = document.getElementById("contactInfo");
+
+            contactLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                contactInfo.classList.toggle("show");
+            });
+        });
+    </script>
+    <style>
+        .contact-info {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roses.html">Roses</a></li>
+                <li><a href="tulips.html">Tulips</a></li>
+                <li><a href="sunflowers.html">Sunflowers</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="flower-collection">
+            <h2>Welcome to Blossoms & Co.</h2>
+            <p>New Year Discount! 40% Off on All Products</p>
+        </section>
+        <section class="place-order">
+            <h2>Place Your Order</h2>
+            <form action="submit_order.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <input type="submit" value="Place Order">
+            </form>
+        </section>
+        <section class="flower-description">
+            <h2>Roses</h2>
+            <div class="flower">
+                <img src="rose1.jpg" alt="Rose 1">
+                <h3>What do Roses Symbolize?</h3>
+                <p>Roses have a rich history around the world, a history full of symbolism. Rose flower meaning varies depending on cultural significance, the color of the bloom, and the number of roses given.</p>
+                <p><strong>Love:</strong> No other flower is as symbolic of love than the rose. In Greek mythology, the rose was beloved and considered sacred by Aphrodite, the goddess of love. That connection with romantic love was paralleled in Roman mythology, associated with Aphrodite’s counterpart, Venus.</p>
+                <p>Roses have a time honored place as a symbol of love in literature and poetry. The rose’s symbolism as a metaphor for the art of romantic love is illustrated in poems like the French “Romance of the Rose,” and Robert Burns’ “A Red Red Rose.” In Romeo and Juliet, Shakespeare gives the rose’s symbolism a deeper, more layered meaning, with the verse, “What’s in a name? A rose by any other name would smell as sweet.” Romeo evokes the romantic symbolism of the rose by associating it with the two lovers, and extending it to illustrate the arbitrary nature of names. As the rose remains the same, so does their love, despite the animosity between their families.</p>
+                <p><strong>Power/Royalty:</strong> Roses were often a motif of military significance. The War of the Roses in 15th century England signified a series of civil wars between the House of York, represented by a white rose, and the House of Lancaster, represented by a red rose. Ultimately the two houses were joined by marriage, creating the House of Tudor, represented by the Tudor Rose.</p>
+                <p><strong>Secrecy:</strong> The term “sub rosa,” meaning “under the roses,” has been a symbol of secrecy dating back to ancient Greek and Roman mythology and the god of silence, Harpocrates. Harpocrates was given the gift of a rose to keep the secrets of the gods. It became customary to exchange military and religious secrets underneath a ceiling of roses, and later rose symbolism adorned the ceilings of meeting and banquet rooms to encourage free and open discussion. Roses often feature as a motif of entryways and ceilings of guest rooms and other places of expected confidentiality.</p>
+            </div>
+        </section>
+        
+        <section class="flower-description">
+            <h2>Tulips</h2>
+            <div class="flower">
+                <img src="tulip1.jpg" alt="Tulip 1">
+                <h3>Flowers are a great way to express your feelings</h3>
+                <p>The most common meanings of tulips are:</p>
+                <p><strong>Deep love:</strong> The most known meaning of tulips is perfect and deep love. As tulips are a classic flower that has been loved by many for centuries they have been attached with the meaning of love.</p>
+                <p><strong>Rebirth:</strong> As tulips bloom at the beginning of spring they also have a meaning of rebirth. If you know someone who is going through some life changes, taking on new adventures and challenges or have welcomed a new addition to the family, a lovely bouquet of tulips would make a wonderful gift.</p>
+                <p><strong>Charity:</strong> Since the Victorian era tulips have also been a symbol of charity. With its cheerful nature and mark of a new season and new beginnings, many charities today still use the beloved tulip flower to represent them.</p>
+            </div>
+        </section>
+        
+        <section class="flower-description">
+            <h2>Sunflowers</h2>
+            <div class="flower">
+                <img src="sunflower1.jpg" alt="Sunflower 1">
+                <h3>Sunflowers are not just visually appealing</h3>
+                <p>The meaning of sunflowers stems from their very nature - always facing the sun, they symbolize unwavering faith and constant orientation towards the light. This is why they are often associated with positivity, happiness, and optimism.</p>
+                <p>The love for sunflowers goes beyond their symbolic meaning. Their seeds provide nutritional value and are loved by both humans and wildlife alike. With their ability to remove toxins from the soil, sunflowers play a crucial role in environmental conservation.</p>
+                <p>No wonder they are cherished and sold all over the world! In Christian symbolism, sunflowers are seen as an emblem of God's love. They depict the believer's devotion and desire to seek spiritual truth, much like the sunflower turns to the sun. An inspiring biblical verse resonates with the sunflower's symbolism:</p>
+                <blockquote>
+                    <p>"Those who look to him are radiant; their faces are never covered with shame." (Psalm 34:5)</p>
+                </blockquote>
+                <p>In Islamic culture, sunflowers are not explicitly mentioned in the Quran. However, the principles they represent, like seeking light (knowledge) and standing tall with faith, align well with the teachings of the Quran.</p>
+                <blockquote>
+                    <p>"Allah is the Light of the heavens and the earth." (Surah An-Nur 24:35)</p>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Blossoms & Co. | 123 Flower St, City, Country | Email: info@blossomsco.com</p>
+    </footer>
+    
+    <div id="contactInfo" class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Website:</strong> <a href="https://www.blossomsco.com">www.blossomsco.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@blossomsco.com">info@blossomsco.com</a></p>
+        <p><strong>Location:</strong> 123 Flower St, City, Country</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>PO Box:</strong> PO Box 789, City, Country</p>
+    </div>
+</body>
+</html>
+s
